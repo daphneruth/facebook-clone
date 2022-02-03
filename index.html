@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=width-device">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <title>Document</title>
+        <title>Facebook Clone</title>
     </head>
     <body>
         <nav>
@@ -28,12 +28,57 @@
                     <input type="text" placeholder="search">
                 </div>
 
-                <div class="nav-user-icon online">
+                <div class="nav-user-icon online" onclick="settingsMenuToggle()">
                     <img src="images/profile.jpeg">
                 </div>
 
             </div>
+            <div class="settings-menu">
+                <div id="dark-btn">
+                    <span></span>
+                </div>
+                <div class="settings-inner-menu">
+                  <div class="user-profile">
+                  <img src="images/profile.jpeg">
+                <div>
+                    <p>Olvia Daphne</p>
+                    <a href="#">See your profile</a>
 
+                </div>
+            </div>
+            <hr>
+            <div class="user-profile">
+            <img src="images/comments.png">
+            <div>
+                <p>Give Feedback</p>
+                <a href="#">Help us to improve the new design</a>
+
+             </div>
+             </div>
+             <hr>
+               <div class="settings-links">
+                   <img src="images/settings.png" class="setings-icon">
+                   <a href="#">Settings and privacy  <img src="images/arrow.png" width="10px"></a>
+
+               </div>
+               <div class="settings-links">
+                <img src="images/help.png" class="setings-icon">
+                <a href="#">Help & Support  <img src="images/arrow.png" width="10px"></a>
+
+            </div>
+            <div class="settings-links">
+                <img src="images/display.png" class="setings-icon">
+                <a href="#">Display & Accessibility  <img src="images/arrow.png" width="10px"></a>
+
+            </div>
+            <div class="settings-links">
+                <img src="images/logout.png" class="setings-icon">
+                <a href="#">Logout <img src="images/arrow.png" width="10px"></a>
+
+            </div>
+
+            </div>
+            </div>
         </nav>
         <div class="container">
            
@@ -96,12 +141,13 @@
               
               <div class="write-post-container">
                   <div class="user-profile">
-                      <img src="images/profile.jpeg">
-                      <div>
-                          <p>Olvia Daphne</p>
-                          <small>Public <i class="fas fa-caret-down"> </i></small>
+                     
+                    <img src="images/profile.jpeg">
+                    <div>
+                        <p>Olvia Daphne</p>
+                        <small>Public <i class="fas fa-caret-down"> </i></small>
 
-                      </div>
+                    </div>
                   </div>
                   <div class="input-container">
                       <textarea  rows="3" placeholder="What is in your mind Olivia"></textarea>
@@ -481,7 +527,9 @@
         </div>
         
       <div class="divfooter">
-          <p>Copyright 2021 -Daphne Ruth #YouTubeChannel</p>
-      </div>  
+          <p>Copyright 2022 -Daphne Ruth #YouTubeChannel</p>
+      </div>
+      
+      <script src="script.js"></script>
     </body>
 </html>
